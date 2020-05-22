@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserPage">
+
+    <include layout="@layout/content_user"
+        android:layout_marginTop="70dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:id="@+id/noexp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="Exp:No Expiry"
+        android:textSize="17dp"
+        android:textColor="#000A09"
+        android:onClick="noexp"/>
+
+    <TextView
+        android:id="@+id/tenthirtyexp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="25dp"
+        android:text="Exp:10-30 days"
+        android:textSize="17dp"
+        android:textColor="#000A09"
+        android:onClick="thirtyexp"/>
+
+    <TextView
+        android:id="@+id/zerotenexp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="285dp"
+        android:layout_marginTop="25dp"
+        android:text="Exp:0-10 days"
+        android:textSize="17dp"
+        android:textColor="#000A09"
+        android:onClick="tenexp"/>
+
+</android.support.design.widget.CoordinatorLayout>
